@@ -14,8 +14,11 @@ class CLIDeleteCommand extends CLICommand
 
     protected function configure(): void
     {
-        $this
-            ->addArgument('fileName', InputArgument::REQUIRED, 'Name of existing file');
+        $this->addArgument(
+            'fileName',
+            InputArgument::REQUIRED,
+            'Name of existing file'
+        );
     }
 
     public function execute(InputInterface $input, OutputInterface $output): int

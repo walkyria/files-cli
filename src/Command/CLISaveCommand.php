@@ -14,8 +14,11 @@ class CLISaveCommand extends CLICommand
 
     protected function configure(): void
     {
-        $this
-            ->addArgument('filePath', InputArgument::REQUIRED, 'Full source file path');
+        $this->addArgument(
+            'filePath',
+            InputArgument::REQUIRED,
+            'Full source file path'
+        );
     }
 
     public function execute(InputInterface $input, OutputInterface $output): int

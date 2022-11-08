@@ -9,13 +9,16 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class CLIGetCommand extends CLICommand
 {
-    protected static $defaultName = 'cli.open';
+    protected static $defaultName = 'cli.get';
     protected static $defaultDescription = "Returns 'remote' path for given file name if found";
 
     protected function configure(): void
     {
-        $this
-            ->addArgument('fileName', InputArgument::REQUIRED, 'Name of existing file');
+        $this->addArgument(
+            'fileName',
+            InputArgument::REQUIRED,
+            'Name of existing file'
+        );
     }
 
     public function execute(InputInterface $input, OutputInterface $output): int
