@@ -20,3 +20,4 @@ cli.save, cli.delete, cli.get
 there is a `start.sh` script that will start the container and go in it
 and another one `stop.sh` to stop it
 
+`test.sh` should run unit tests
