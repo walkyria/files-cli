@@ -28,7 +28,8 @@ class FileManager
         }
 
         try {
-            file_put_contents($file->getName(), $file->getContents());
+            $targetPath = $this->getPath() . "/" . $file->getName();
+            file_put_contents($targetPath, $file->getContents());
         } catch (Exception $exception) {
             $this->logger->critical("Could not save the file");
             return false;
@@ -76,6 +77,6 @@ class FileManager
     protected function getPath() : string
     {
         //TODO: load path from config
-        return '/tmp/';
+        return '/tmp';
     }
 }
