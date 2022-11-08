@@ -1,7 +1,7 @@
 # files-cli
 
 This little project runs inside a Docker 
-container with php image
+container with a php image
 
 starting the container
 
@@ -17,6 +17,6 @@ from command line:
 
 cli.save, cli.delete, cli.get
 
-there is a `start.sh` script that will start the container and open it
-
+there is a `start.sh` script that will start the container and go in it
+and another one `stop.sh` to stop it
 
