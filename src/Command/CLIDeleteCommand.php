@@ -10,6 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class CLIDeleteCommand extends CLICommand
 {
     protected static $defaultName = 'cli.delete';
+    protected static$defaultDescription = "Deletes file from 'remote' file system";
 
     protected function configure(): void
     {

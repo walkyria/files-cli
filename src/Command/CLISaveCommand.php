@@ -10,6 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class CLISaveCommand extends CLICommand
 {
     protected static $defaultName = 'cli.save';
+    protected static $defaultDescription = "Saves file to 'remote' file system";
 
     protected function configure(): void
     {

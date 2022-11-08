@@ -10,6 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class CLIGetCommand extends CLICommand
 {
     protected static $defaultName = 'cli.open';
+    protected static $defaultDescription = "Returns 'remote' path for given file name if found";
 
     protected function configure(): void
     {
